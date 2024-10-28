@@ -1,12 +1,43 @@
 * {
     font-family: "Arima", system-ui;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 header {
     text-align: center;
     font-size: 75px;
     font-weight: 700;
+    padding: 3%;
+    background-color:#d2691ec2 ;
+}
+
+a {
+    color:white;
+}
+
+nav {
+    width: 99.8%;
+    border: 2px solid black;
+    padding: 40px 0;
+    background-color: #17178bee;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 1% 1%;
+    font-size: 20px;
+    display: flex;
+}
+
+nav li {
+    display: inline;
+    padding: 1%;
+    margin: 0;
+    margin-right: 10%;
+    border: 1px solid black;
+    text-align: center;
 }
 
 h1 {
@@ -14,12 +45,13 @@ h1 {
     font-weight: 700;
     font-size: 50px;
     font-style: normal;
+    padding: 3%;
 }
 
 #gallery {
     width: 50%;
     height: auto;
-    margin-left: 31%;
+    margin-left: 33%;
     overflow: hidden;
 
     animation: slide 15s infinite alternate ease-in-out;
