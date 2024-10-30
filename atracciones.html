@@ -28,31 +28,26 @@
             <h1>Adrenalina en estado puro</h1>
         </article>
         <div id="gallery">
-            <ul>
-                <li><figure>
-                        <img src="images/montañaRusaSmall.jpg" alt="montañaRusa">
-                        <figcaption>Montaña rusa</figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <img src="images/waterSmall.jpg" alt="">
-                        <figcaption>Atracción de agua</figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <img src="images/ruletaSmall.jpg" alt="">
-                        <figcaption>Balanceador</figcaption>
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <img src="images/sillasVoladorasSmall.jpg" alt="">
-                        <figcaption>Sillas voladoras</figcaption>
-                    </figure>
-                </li>
-            </ul>
+            <div class="slider">
+                <input type="radio" name="slider" id="slideOne" checked>
+                <input type="radio" name="slider" id="slideTwo">
+                <input type="radio" name="slider" id="slideThree">
+                <input type="radio" name="slider" id="slideFour">
+
+                <div class="buttons">
+                    <label for="slideOne"></label>
+                    <label for="slideTwo"></label>
+                    <label for="slideThree"></label>
+                    <label for="slideFour"></label>
+                </div>
+
+                <div class="images">
+                    <div class="img1"><img src="images/montañaRusaSmall.jpg" alt="montaña rusa"></div>
+                    <div class="img2"><img src="images/waterSmall.jpg" alt="atracción de agua"></div>
+                    <div class="img3"><img src="images/ruletaSmall.jpg" alt="ruleta"></div>
+                    <div class="img4"><img src="images/sillasVoladorasSmall.jpg" alt="sillas voladoras"></div>
+                </div>
+            </div>
         </div>
     </main>
     <script src="script.js"></script>
