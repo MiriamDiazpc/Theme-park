@@ -55,27 +55,31 @@ p {
     padding: 8%;
     padding-left: 50%;
     padding-top: 5%;
-    background-image: url(images/feria2.jpg);
+    background-image: url(images/feria1.jpg);
     background-position: 60% 15%;
     color: white;
 }
 
 .diversion{
     padding: 5% 15% 8% 15%;
-    background-image: url(images/feria5.jpg);
+    background-image: url(images/feria2.jpg);
     background-position: 42% 20%;
 }
 
 .sorpresas{
-    padding: 8% 45%;
-    background-image: url(images/feria4.jpg);
-    background-position: top;
-    color: #eadcd1;
+    padding: 3% 35% 8% 0%;
+    text-align: center;
+    background-image: url(images/feria3.jpg);
+    background-position: 45% 45%;
+    color: #364143;
 }
 
 aside{
+    background-image: url(images/fireworks.jpg);
+    background-position: 9% 50%;
     text-align: center;
-    margin: 4%;
+    color: #f5cec6;
+    padding: 8% 15% 8% 28%;
 }
 
 h1 {
