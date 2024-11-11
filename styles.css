@@ -94,106 +94,45 @@ h2 {
     margin: 2%;
 }
 
-#gallery {
+.container {
     position: relative;
-    width: 100%;
-    height: 100vh;
-    background-color: #dcdcdc;
+    margin: 0 auto;
 }
 
-.slider input {
-    visibility: hidden;
-    display: none;
-}
-
-.buttons {
-    position: absolute;
-    width: 100%;
+.slider {
     display: flex;
-    justify-content: center;
-    bottom: 100%;
-    gap: 15px;
-    padding: 0.5%;
-}
-
-.buttons label {
-    width: 20px;
-    height: 20px;
-    background-color: black;
-    border-radius: 25%;
-    opacity: 0.5;
-    cursor: pointer;
-    z-index: 1;
-    transition: 300ms ease-in-out;
-}
-
-/*Cuando pasa el cursor por los label, se amplan y se oscurecen*/
-.buttons label:hover{
-    scale: 1.2;
-    opacity: 1;
-    width: 40px;
-}
-
-/*Se enlazan los input con cada uno de los label*/
-.slider input:nth-child(1):checked ~ .buttons label:nth-child(1), 
-.slider input:nth-child(2):checked ~ .buttons label:nth-child(2), 
-.slider input:nth-child(3):checked ~ .buttons label:nth-child(3),
-.slider input:nth-child(4):checked ~ .buttons label:nth-child(4) {
-    scale: 1.2;
-    opacity: 1;   
-}
-
-.images {
-    position: relative;
-    width: 100%;
-    display: flex;
-    transition: 400ms ease-in-out;
-}
-
-.img1, .img2, .img3, .img4 {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.slider input:nth-child(1):checked ~ .images {
-    left: 0vw;
-}
-
-.slider input:nth-child(2):checked ~ .images {
-    left: -100vw;
-}
-
-.slider input:nth-child(3):checked ~ .images {
-    left: -200vw;
-}
-
-/*#gallery {
-    width: 50%;
-    height: auto;
-    margin-left: 26%;
-    overflow: scroll;
+    width: 80%;
+    height: 65vh;
+    margin: 0 auto 9%;
     scroll-snap-type: x mandatory;
+    overflow-x: hidden;
 }
 
-#gallery ul {
-    display: flex;
-    padding: 0;
-    width: 400%;
-}
-
-#gallery li {
-    width: 100%;
-}
-
-#gallery img {
-    width: 100%;
-    left: 0;
-    position: sticky;
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
     object-fit: cover;
-    border-radius: 5px;
-    scroll-snap-align: center;
-}*/
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: #d2691ec2;
+    transition: opacity ease-in-out 2s;
+}
+
+.slider-nav a:hover{
+    background-color: #ff6a00c2;
+}
+
