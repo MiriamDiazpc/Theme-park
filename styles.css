@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+body {
+    background-color: #d2691e44;
+}
+
 header {
     text-align: center;
     font-size: 75px;
@@ -13,6 +17,7 @@ header {
     background-color:#d2691ec2 ;
 }
 
+/*Página de inicio*/
 nav {
     width: 99.8%;
     border: 2px solid black;
@@ -53,29 +58,29 @@ p {
 
 .recuerdos{
     padding: 8%;
-    padding-left: 50%;
+    padding-left: 45%;
     padding-top: 5%;
-    background-image: url(images/feria1.jpg);
+    background-image: url(images/inicio/feria1.jpg);
     background-position: 60% 15%;
     color: white;
 }
 
 .diversion{
     padding: 5% 15% 8% 15%;
-    background-image: url(images/feria2.jpg);
+    background-image: url(images/inicio/feria2.jpg);
     background-position: 42% 20%;
 }
 
 .sorpresas{
     padding: 3% 35% 8% 0%;
     text-align: center;
-    background-image: url(images/feria3.jpg);
+    background-image: url(images/inicio/feria3.jpg);
     background-position: 45% 45%;
     color: #364143;
 }
 
 aside{
-    background-image: url(images/fireworks.jpg);
+    background-image: url(images/inicio/fireworks.jpg);
     background-position: 9% 50%;
     text-align: center;
     color: #f5cec6;
@@ -90,31 +95,31 @@ h1 {
     padding: 3%;
 }
 
-h2 {
-    margin: 2%;
-}
 
+
+/*Página de atracciones*/
 .container {
     position: relative;
     margin: 0 auto;
 }
 
-.slider {
+.slider-atracciones {
     display: flex;
     width: 80%;
     height: 65vh;
     margin: 0 auto 9%;
     scroll-snap-type: x mandatory;
     overflow-x: hidden;
+    border-radius: 5px;
 }
 
-.slider img {
+.slider-atracciones img {
     flex: 1 0 100%;
     scroll-snap-align: start;
     object-fit: cover;
 }
 
-.slider-nav {
+.slider-atracciones-nav {
     display: flex;
     column-gap: 1rem;
     position: absolute;
@@ -124,15 +129,27 @@ h2 {
     z-index: 1;
 }
 
-.slider-nav a {
+.slider-atracciones-nav a {
     width: 1.5rem;
     height: 1.5rem;
     border-radius: 50%;
-    background-color: #d2691ec2;
-    transition: opacity ease-in-out 2s;
+    background-color: #f4a460;
 }
 
-.slider-nav a:hover{
+.slider-atracciones-nav a:hover{
     background-color: #ff6a00c2;
 }
 
+/*Página de comentarios*/
+.slider-testimonios {
+    position: relative;
+    margin: 0 auto;
+}
+
+.slider-testimonios img{
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 3% 47% 0%; 
+}
